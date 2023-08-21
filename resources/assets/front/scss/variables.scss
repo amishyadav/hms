@@ -1,0 +1,23 @@
+//colors
+$cyan: #3DC1D3 !default;
+$blue: #012172 !default;
+$gray: #2C3E50 !default;
+$white: #FFFFFF !default;
+$white-200: #F6FCFF !default;
+//theme color variable
+$primary: $cyan !default;
+$secondary: $blue !default;
+$bg-light: $white-200 !default;
+$gray-100: #DDE3E9 !default;
+$gray-200: #6E7F90 !default;
+$gray-300: #2C3E50 !default;
+
+
+// border-radius-variables
+$border-radius: 25px !default;
+$border-radius-lg: 50px !default;
+$border-lg: 1px solid $gray-100 !default;
+
+// buttons
+$btn-focus-box-shadow: 0 !default;
+

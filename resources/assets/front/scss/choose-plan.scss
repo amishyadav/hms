@@ -1,0 +1,11 @@
+.choose-payment-plan-page {
+    .plan-card-detail {
+        padding: 40px;
+        box-shadow: 0 5px 5px #e2ebf0;
+        border: 1px solid #dde3e9;
+
+        @media (max-width: 575px) {
+            padding: 20px;
+        }
+    }
+}

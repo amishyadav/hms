@@ -1,0 +1,2 @@
+{{ $row->subscriptionPlan->name}}
+ 

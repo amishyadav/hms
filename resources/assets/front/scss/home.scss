@@ -1,0 +1,66 @@
+@import "../scss/variables.scss";
+
+
+.protect-health {
+    .card {
+        padding: 30px;
+        height: 100%;
+
+        @media (max-width: 425px) {
+            padding: 20px;
+        }
+
+        .card-img {
+            width: 80px;
+        }
+    }
+}
+
+.hospital-sass-section {
+
+    .sass-left-content {
+        @media (min-width: 992px) {
+            background-color: #e4f7ff;
+            border-top-right-radius: 190px;
+            border-bottom-right-radius: 190px;
+            display: block;
+            width: 1000vh;
+            height: 380px;
+            float: right;
+            margin-right: -40px;
+        }
+
+        @media (max-width: 1399px) and (min-width: 992px) {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+    }
+
+    .sass-right-content {
+        .sass-desc {
+            i {
+                width: 30px;
+                height: 30px;
+                border-radius: $border-radius-lg;
+                min-width: 30px;
+            }
+        }
+    }
+}
+
+.our-hospitals {
+    .card {
+        .card-img {
+            width: 80px;
+            height: 80px;
+            margin-left: -40px;
+
+            @media (max-width: 767px) {
+                width: 70px;
+                margin-left: -35px;
+            }
+
+        }
+    }
+}

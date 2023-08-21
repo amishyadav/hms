@@ -1,0 +1,547 @@
+@import "../scss/variables.scss";
+.pt-100 {
+    padding-top: 100px;
+
+    @media (max-width: 991px) {
+        padding-top: 50px;
+    }
+}
+.pt-120 {
+    padding-top: 120px;
+    @media (max-width: 991px) {
+        padding-top: 50px;
+    }
+}
+.py-100 {
+    padding: 100px 0;
+    @media (max-width: 991px) {
+        padding: 50px 0;
+    }
+}
+.py-120 {
+    padding: 120px 0;
+    @media (max-width: 991px) {
+        padding: 50px 0;
+    }
+}
+.py-80 {
+    padding: 80px 0;
+    @media (max-width: 991px) {
+        padding: 50px 0;
+    }
+}
+.pt-80 {
+    padding-top: 80px;
+    @media (max-width: 991px) {
+        padding-top: 50px;
+    }
+}
+.px-70 {
+    padding: 10px 70px !important;
+    @media (max-width: 991px) {
+        padding: 10px 50px !important;
+    }
+    @media (max-width: 991px) {
+        padding: 8px 30px !important;
+    }
+}
+.fs-64 {
+    font-size: 64px;
+    @media (max-width: 991px) {
+        font-size: 52px;
+    }
+    @media (max-width: 767px) {
+        font-size: 46px;
+    }
+    @media (max-width: 480px) {
+        font-size: 32px;
+    }
+}
+.fs-14 {
+    font-size: 14px !important;
+    @media (max-width: 480px) {
+        font-size: 12px;
+    }
+}
+.fs-18 {
+    font-size: 18px;
+    @media (max-width: 767px) {
+        font-size: 16px;
+    }
+}
+.p-60 {
+    padding: 60px;
+    @media (max-width: 1199px) {
+        padding: 40px;
+    }
+    @media (max-width: 480px) {
+        padding: 25px;
+    }
+}
+.mt-60 {
+    margin-top: 60px;
+    @media (max-width: 1199px) {
+        margin-top: 40px;
+    }
+}
+.py-20 {
+    padding: 20px 30px;
+}
+
+.bg-cyan {
+    background-color: $cyan !important;
+}
+.text-cyan {
+    color: $cyan !important;
+}
+.text-secondary {
+    color: $blue !important;
+}
+.bg-light {
+    background-color: $white-200;
+}
+.rounded-20 {
+    border-radius: 20px;
+}
+.btn {
+    padding: 10px 30px;
+    border-radius: $border-radius;
+    box-shadow: none !important;
+    font-weight: 600;
+}
+
+.btn-primary {
+    color: $white;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $white;
+        color: $primary;
+    }
+}
+
+.btn-secondary {
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $white;
+        color: $secondary;
+    }
+}
+
+.bg-light {
+    background-color: $bg-light !important;
+}
+
+.text-cyan {
+    color: $cyan !important;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a,
+p,
+li {
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 400;
+    color: $gray-200;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+    color: $gray-300;
+}
+h1 {
+    font-size: 58px;
+    line-height: 70px;
+
+    @media (max-width: 1199px) {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    @media (max-width: 991px) {
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    @media (max-width: 425px) {
+        font-size: 26px;
+        line-height: 32px;
+    }
+}
+
+h2 {
+    font-size: 40px;
+    line-height: normal !important;
+
+    @media (max-width: 1199px) {
+        font-size: 35px;
+    }
+
+    @media (max-width: 991px) {
+        font-size: 30px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 26px;
+    }
+
+    @media (max-width: 425px) {
+        font-size: 24px;
+    }
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 34px;
+
+    @media (max-width: 991px) {
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+
+h4 {
+    color: #2c3e50;
+}
+
+.hero-section {
+    .hero-content {
+        margin-top: -120px;
+        @media (max-width: 991px) {
+            margin-top: 0;
+        }
+    }
+}
+
+.card {
+    border-radius: 20px;
+}
+
+.form-select,
+.form-control {
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.form-select {
+    border-radius: 10px;
+}
+
+.section-heading {
+    margin-bottom: 80px;
+
+    @media (max-width: 991px) {
+        margin-bottom: 40px;
+    }
+
+    @media (max-width: 575px) {
+        margin-bottom: 30px;
+    }
+}
+
+.service-section {
+    .card-img {
+        width: 60px;
+
+        @media (max-width: 1199px) {
+            width: 50px;
+        }
+
+        @media (max-width: 767px) {
+            width: 45px;
+        }
+
+        @media (max-width: 425px) {
+            width: 30px;
+        }
+    }
+}
+
+.about-hospital {
+    .card {
+        padding: 40px;
+        height: 100%;
+
+        @media (max-width: 991px) {
+            padding: 30px;
+        }
+
+        @media (max-width: 425px) {
+            padding: 20px;
+        }
+
+        .card-img {
+            width: 60px;
+
+            @media (max-width: 320px) {
+                width: 45px;
+            }
+        }
+        .img {
+            width: 40px;
+
+            @media (max-width: 320px) {
+                width: 30px;
+            }
+        }
+    }
+}
+
+.pagination {
+    .page-item {
+        padding: 8px;
+
+        @media (max-width: 575px) {
+            padding: 4px;
+        }
+
+        .page-link {
+            color: $gray-200;
+            border: none;
+            box-shadow: none;
+            border-radius: $border-radius-lg;
+            padding: 3px 12px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media (max-width: 575px) {
+                padding: 1px 10px;
+                font-size: 14px;
+            }
+
+            &.active,
+            &:focus,
+            &:hover {
+                color: $cyan;
+            }
+
+            &.previous,
+            &.next {
+                border: $border-lg;
+            }
+        }
+    }
+}
+
+.plan-section {
+    .switches-container {
+        width: 16rem;
+        position: relative;
+        display: flex;
+        line-height: 3rem;
+        border-radius: 10px;
+        border: $border-lg;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 80px;
+        padding: 4px;
+
+        @media (max-width: 991px) {
+            margin-bottom: 50px;
+        }
+
+        .nav-item {
+            .nav-link {
+                color: #6E7F90;
+                border-radius: 10px;
+
+                &.active {
+                    color: $white;
+                    background-color: $secondary;
+                }
+            }
+        }
+    }
+
+    .switches-container input {
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+    }
+
+    .pricing-plan-card {
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        @media (max-width: 991px) {
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+
+        .pricing-text {
+            border-bottom: 1px solid #dde3e9;
+        }
+
+        .pricing-plan-features {
+            max-width: 250px;
+            margin-left: auto;
+            margin-right: auto;
+
+            @media (max-width: 480px) {
+                max-width: 200px;
+            }
+
+            .active-check {
+                .check-box {
+                    width: 20px;
+                    height: 20px;
+                    display: inline-block;
+                    border-radius: $border-radius-lg;
+                    font-size: 12px;
+                    line-height: 22px !important;
+                    margin-right: 20px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+.swiper-pagination {
+    margin-top: 50px;
+    position: relative;
+    left: -152px !important;
+    bottom: 0 !important;
+
+    @media (max-width: 1199px) {
+        left: -72px !important;
+    }
+
+    @media (max-width: 480px) {
+        left: -6px !important;
+    }
+
+    .swiper-pagination-bullet-active {
+        opacity: 1;
+        background: $secondary;
+        width: 20px;
+        border-radius: 10px;
+    }
+}
+
+.subscribe-section {
+    .email-box {
+        position: relative !important;
+
+        input {
+            padding: 20px 158px 20px 40px;
+            width: 100%;
+            border: $border-lg;
+            border-radius: 35px;
+            outline: none;
+            height: 68px;
+
+            @media (max-width: 575px) {
+                padding: 12px 95px 12px 20px;
+            }
+        }
+
+        .btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            height: 48px;
+        }
+    }
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: $white !important;
+}
+
+.accordion-button::after {
+    @media (max-width: 991px) {
+        width: 1rem;
+        height: 1rem;
+        background-size: 1rem;
+    }
+    @media (max-width: 575px) {
+        width: 14px;
+        height: 14px;
+        background-size: 14px;
+    }
+}
+
+.accordion-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.g-recaptcha {
+    transform: scale(0.85); 
+    transform-origin: left top;
+}
+.slick-dots {
+    left: 0;
+    right: 0;
+
+    li {
+        margin: 0;
+    }
+}
+
+.client-logo {
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.custom-service-slider {
+    height: 37px !important;
+    object-fit: cover;
+}
+
+.help-block.with-errors {
+    position: absolute;
+    color: red;
+    right: 15px;
+    font-size: 10px;
+    line-height: 14px;
+}
+
+.captcha-customize {
+    @media (max-width: 399px) {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.g-recaptcha {
+    @media (max-width: 399px) {
+        transform: scale(.77);
+        -webkit-transform: scale(.77);
+        transform-origin: center;
+        -webkit-transform-origin: center;
+    }
+}
+
+.footer-active{
+    color: #FC8C4B !important;
+}
+
+.footer-link-active {
+    color: #3DC1D3 !important;
+}

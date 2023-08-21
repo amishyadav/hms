@@ -1,0 +1,154 @@
+@import "../scss/variables.scss";
+
+.service-section {
+    .slick-slider {        
+        .slick-dots {
+            bottom: -50px;
+            display: block !important;
+        }
+
+        .slick-dots li {
+            width: 25px;
+        }
+
+        .slick-dots li button:before {
+            font-family: "slick";
+            font-size: 30px;
+            color: $white;
+            opacity: 0.5;
+        }
+
+        .slick-dots li.slick-active button:before {
+            color: transparent;
+            position: absolute;
+            top: 6px;
+            opacity: 1;
+            width: 25px;
+            height: 8px;
+            background-color: $cyan;
+            border-radius: 40px;
+        }
+    }
+}
+
+.testimonial-section {
+    .testimonial-carousel {
+        .slick-dots {
+            bottom: 15px;
+            display: none !important;
+            @media (max-width: 991px) {
+                display: block !important;
+            }
+        }
+
+        .slick-slide {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .slick-dots li button:before {
+            font-family: "slick";
+            font-size: 40px;
+            color: $gray-200;
+            opacity: 0.5;
+        }
+        
+        .slick-dots li.slick-active button:before {
+            color: $blue;
+            opacity: 1;
+        }
+        
+        .testimonial-card {
+            .profile-img {
+                position: relative !important;
+                top: 25px;
+                left: 20px;
+                width: 300px;
+                height: 300px;
+                object-fit: cover;
+
+                @media (max-width: 767px) {
+                    top: 50px;
+                }
+
+                @media (max-width: 991px) {
+                    width: 280px;
+                }
+                
+                @media (max-width: 575px) {
+                    top: 0;
+                    left: 10px;
+                }
+            }
+            .profile-box {
+                position: relative !important;
+                bottom: 70px;
+                z-index: -1;
+                height:100px;
+                -webkit-box-orient: vertical;
+                display: -webkit-box!important;
+
+
+                @media (max-width:767px) {
+                    height:240px;
+                }
+            }
+
+            .profile-box  p {
+                overflow : hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box!important;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+            }
+            .quotation-mark {
+                position: absolute;
+                right: 40px;
+                bottom: 25px;
+                @media (max-width: 767px) {
+                    bottom: 200px;
+                }
+
+                @media (max-width: 475px) {
+                    display: none;
+                }
+                img {
+                    width: 100px;
+                    @media (max-width: 767px) {
+                        width: 60px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.slick-prev,
+.slick-next {
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    bottom: auto;
+
+    &::before {
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        -webkit-font-smoothing: antialiased;
+        display: var(--fa-display, inline-block);
+        color: $gray-200 !important;
+        opacity: 1;
+        @media (max-width: 991px) {
+            display: none;
+        }
+    }
+}
+
+.slick-prev {
+    left: -100px;
+}
+
+.slick-next {
+    right: -100px;
+}
+
+
